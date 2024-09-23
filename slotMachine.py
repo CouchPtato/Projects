@@ -27,10 +27,15 @@ class SlotMachine:
         bet_amount = 10
 
         print(f"Spinning... ")
-        time.sleep(2)
+        print(f".")
+        time.sleep(1)
+        print(f".")
+        time.sleep(1)
+        print(f".")
+        time.sleep(1)
 
         spin_result = self.spin()
-        print(f"{' | '.join(spin_result)}")
+        print(f"{' || '.join(spin_result)}")
 
         result, amount = self.evaluate_spin(spin_result)
         if result == "jackpot":
@@ -62,10 +67,15 @@ class HighRiskSlotMachine(SlotMachine):
         bet_amount = 20
 
         print(f"Spinning... ")
-        time.sleep(2)
+        print(f".")
+        time.sleep(1)
+        print(f".")
+        time.sleep(1)
+        print(f".")
+        time.sleep(1)
 
         spin_result = self.spin()
-        print(f"{' | '.join(spin_result)}")
+        print(f"{' || '.join(spin_result)}")
 
         result, amount = self.evaluate_spin(spin_result)
         if result == "jackpot":
