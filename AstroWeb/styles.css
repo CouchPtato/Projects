@@ -2,6 +2,8 @@ body {
   font-family: 'Arial', sans-serif;
   background: url('background.png') no-repeat center center fixed;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   /* background: linear-gradient(to right, #1e3c72, #2a5298); */
   color: white;
   text-align: center;
