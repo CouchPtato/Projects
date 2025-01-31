@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrology Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Astrology World</h1>
+  </header>
+  
+  <main>
+    <label for="zodiac-select">Choose your Zodiac Sign:</label>
+    <select id="zodiac-select">
+      <option value="aries">Aries</option>
+      <option value="taurus">Taurus</option>
+      <option value="gemini">Gemini</option>
+      <option value="cancer">Cancer</option>
+      <option value="leo">Leo</option>
+      <option value="virgo">Virgo</option>
+      <option value="libra">Libra</option>
+      <option value="scorpio">Scorpio</option>
+      <option value="sagittarius">Sagittarius</option>
+      <option value="capricorn">Capricorn</option>
+      <option value="aquarius">Aquarius</option>
+      <option value="pisces">Pisces</option>
+    </select>
+    <button onclick="fetchHoroscope()">Get Horoscope</button>
+
+    <div id="horoscope-output"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Astrology Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
