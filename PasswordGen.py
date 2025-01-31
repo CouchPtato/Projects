@@ -9,7 +9,6 @@ root.title("Tkinter Project")
 
 def Password():
     passwordEntry.delete(0, END)
-
     length = int(lengthEntry.get())
     pwd = ''
 
