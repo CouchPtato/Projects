@@ -1,38 +1,40 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  header {
-    margin-bottom: 40px;
-  }
-  
-  select, button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 8px;
-  }
-  
-  #horoscope-output {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: yellow;
-  }
-  
-  .horoscope-details {
-    text-align: left;
-    background: #222;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: white;
-  }
-  
-  h2 {
-    color: cyan;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  /* background: linear-gradient(to right, #1e3c72, #2a5298); */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+select, button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+#horoscope-output {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: yellow;
+}
+
+.horoscope-details {
+  text-align: left;
+  background: #222;
+  opacity: 0.87;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+h2 {
+  color: cyan;
+}

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astrology Webpage</title>
+  <title>Local Horoscope Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to the Astrology World</h1>
+    <h1>Horoscope Information</h1>
   </header>
-  
+
   <main>
     <label for="zodiac-select">Choose your Zodiac Sign:</label>
     <select id="zodiac-select">
@@ -27,7 +27,7 @@
       <option value="aquarius">Aquarius</option>
       <option value="pisces">Pisces</option>
     </select>
-    <button onclick="fetchHoroscope()">Get Horoscope</button>
+    <button onclick="showHoroscope()">Get Horoscope</button>
 
     <div id="horoscope-output"></div>
   </main>
@@ -36,6 +36,6 @@
     <p>© 2025 Astrology Web</p>
   </footer>
 
-  <script src="Script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
