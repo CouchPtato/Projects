@@ -2,6 +2,9 @@ import json
 
 FILENAME = 'ContactList\contacts.json'
 
+def is_valid_number(phone):
+    return phone.isdigit() and len(phone) == 10
+
 def load_contacts():
     try:
         with open(FILENAME, 'r') as file:
@@ -15,7 +18,14 @@ def save_contacts(contacts):
 
 def add_contact(contacts):
     name = input("\nEnter name: ")
-    phone = input("Enter phone number: ")
+
+    while True:
+        phone = input("Enter phone number: ")
+        if is_valid_number(phone):
+            break
+        else:
+            print("Number not valid")
+
     contacts.append({"name": name, "phone": phone})
     save_contacts(contacts)
     print("Contact added!")
