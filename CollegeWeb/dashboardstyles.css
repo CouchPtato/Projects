@@ -50,6 +50,7 @@ h2 {
 }
 
 .menu {
+  flex-direction: column;
   display: flex;
   list-style: none;
   justify-content: space-evenly;
