@@ -16,18 +16,32 @@ function handleSubmit(event) {
 }
 
 
-// Student work
-const studentWorkBtn = document.getElementById('studentWorkBtn');
-const studentWorkMenu = document.getElementById('studentWorkMenu');
+// Student work drop-down menu
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("studentWorkBtn");
+    const menu = document.getElementById("studentWorkMenu");
+    const details = document.getElementById("viewStudentDetails");
+    const studentModal = document.getElementById("studentModal");
+    const closeModal = document.querySelector(".close");
 
-studentWorkBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-    studentWorkMenu.classList.toggle('show');
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        menu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!button.contains(event.target) && !menu.contains(event.target)) {
+            menu.classList.remove("show");  
+        }
+    });
+
+    details.addEventListener("click", function (event) {
+        event.preventDefault();
+        studentModal.style.display = "flex";
+    });
+
+    closeModal.addEventListener("click", function () {
+        studentModal.style.display = "none";
+    });
 });
 
-// Close dropdown if clicked outside
-document.addEventListener('click', (event) => {
-    if (!studentWorkBtn.contains(event.target) && !studentWorkMenu.contains(event.target)) {
-        studentWorkMenu.classList.remove('show');
-    }
-});

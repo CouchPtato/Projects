@@ -1,52 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboardstyles.css">
 </head>
+
 <body>
-  <header>
-    <div class="header-container">
-      <img src="college-logo.png" alt="College Logo" class="college-logo">
-      <div>
-        <h1>Atma Ram Sanatan Dharma College</h1>
-        <h3>Semester Examination (May-June 2025)</h3>
-      </div>
-    </div>
-    <nav class="navbar">
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Admission</a></li>
-        <li class="dropdown">
-          <a href="#" id="studentWorkBtn">Student Work</a>
-          <ul class="dropdown-menu" id="studentWorkMenu">
-            <li><a href="#">View Paper Details</a></li>
-            <li>Time Table Details (Student Specific)</li>
-            <li>Time Table Report (Common Papers)</li>
-            <li>Monthly Attendance Report</li>
-            <li>Daily Attendance Report</li>
-            <li>Final IA / TU Marks Details</li>
-            <li>Submit Confirmation of IA Marks</li>
-            <li>Class Test, Assignment of IA and CA Marks of TU</li>
-          </ul>
-        </li>
-        <li><a href="#">Mentor Details</a></li>
-        <li><a href="#">Important Links</a></li>
-        <li><a href="#">Other</a></li>
-        <li><a href="better.html" class="logout">Logout</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="header-container">
+            <img src="images/5859662e4f6ae202fedf2878.png" alt="College Logo" class="college-logo">
+            <div>
+                <h1>Atma Ram Sanatan Dharma College</h1>
+                <h3>Semester Examination (May-June 2025)</h3>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Admission</a></li>
+                <li class="dropdown">
+                    <a href="#" id="studentWorkBtn">Student Work</a>
+                    <ul class="dropdown-menu" id="studentWorkMenu">
+                        <li><a href="#" id="viewStudentDetails">View Student details</a></li>
+                        <li><a href="#">View Paper Details</a></li>
+                        <li><a href="#">Time Table Details (Student Specific)</a></li>
+                        <li><a href="#">Monthly Attendance Report</a></li>
+                        <li><a href="#">Daily Attendance Report</a></li>
+                        <li><a href="#">Final IA / TU Marks Details</a></li>
+                        <li><a href="#">Submit Confirmation of IA Marks</a></li>
+                        <li><a href="#">Class Test, Assignment of IA and CA Marks of TU</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mentor Details</a></li>
+                <li><a href="#">Important Links</a></li>
+                <li><a href="#">Other</a></li>
+                <li><a href="better.html" class="logout">Logout</a></li>
+            </ul>
 
-  <main>
-    <section class="notice-board">
-      <h2>Notice Board <span class="new-icon">New</span></h2>
-      <p>New Updates Available!</p>
-    </section>
-  </main>
+            <div id="studentModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Student Details</h2>
+                    <img src="images/charmender.png" alt="Charmander" class="student-img">
+                    <p><b>Name:</b> Charmander</p>
+                    <p><b>Course:</b> B.Sc. (Hons) Computer Science</p>
+                    <p><b>Year:</b> 2nd Year</p>
+                    <p><b>Skills:</b> Python (Fire-themed AI), C++, Java</p>
+                    <p><b>Hobbies:</b> Coding, Battling, Exploring Kanto</p>
+                </div>
+            </div>
 
-  <script src="script.js"></script>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notice-board">
+            <h2>Notice Board <span class="new-icon">New</span> </h2>
+            <ul>
+                <li>🔥 <b>Pokémon Battle Tournament</b>: Join the **ARSD Pokémon Showdown** this Saturday! Register now.</li>
+                <li>⚡ <b>Pikachu Fan Club</b>: Weekly meeting in Room 105. Discuss theories, strategies, and more!</li>
+                <li>🌿 <b>Pokédex Challenge</b>: Can you name 50 Pokémon from memory? Try our quiz & win cool rewards!</li>
+                <li>💎 <b>Shiny Hunt Event</b>: Trade and discuss rare **Shiny Pokémon** in the Common Hall this Friday.</li>
+                <li>🏆 <b>Gym Leader Challenge</b>: Battle our top trainers and earn the **ARSD Gym Badge**!</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #ffcc00, #ff5733);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 450px;
+  border: none;
+}
+
+/* Poké Ball Image */
+.pokeball-img {
+  width: 80px;
+  margin: 10px 0;
+}
+
+/* Form Fields */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+
+}
+
+.mandatory {
+  color: red;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 2px solid #ff6817;
+  border-radius: 6px;
+}
+
+.dob-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob-fields select {
+  width: 32%;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e2421e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #fc6040;
+  }
+  
+
+  @media (max-width: 480px) {
+    .login-container {
+      width: 70%;
+      padding: 10px;
+    }
+  
+    .pokeball-img {
+      width: 60px;
+    }
+
+  }
+  
