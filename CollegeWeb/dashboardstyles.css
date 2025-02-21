@@ -21,7 +21,7 @@ h1, h3 {
 
 h2 {
   color: rgb(222, 8, 8);
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P';
   margin-bottom: 15px;
 }
 
@@ -159,28 +159,29 @@ h2 {
   height: auto;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .header-container {
+    padding: 15px;
     flex-direction: column;
     text-align: center;
   }
 
-  .college-info h1 {
-    font-size: 18px;
-  }
-
   .menu {
-    flex-direction: column;
-    padding: 0;
+    padding: 6px;
+    gap: 10px;
   }
 
-  .menu li {
-    margin: 5px 0;
+  .menu a {
+    padding: 6px;
+    display: block;
   }
 
-  .dropdown-menu {
-    position: relative;
+  .notice-board {
+    padding: 20px;
+    font-size: 1em;
   }
 
+  .modal-content {
+    width: 80%; /* Reduce modal width for smaller screens */
+  }
 }

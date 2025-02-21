@@ -25,13 +25,11 @@ body {
   border: none;
 }
 
-/* Poké Ball Image */
 .pokeball-img {
   width: 80px;
   margin: 10px 0;
 }
 
-/* Form Fields */
 label {
   display: block;
   margin-bottom: 8px;
