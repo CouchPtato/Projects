@@ -50,7 +50,6 @@ h2 {
 }
 
 .menu {
-  flex-direction: column;
   display: flex;
   list-style: none;
   justify-content: space-evenly;
@@ -168,6 +167,7 @@ h2 {
   }
 
   .menu {
+    flex-direction: column;
     padding: 6px;
     gap: 10px;
   }
