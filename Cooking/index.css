@@ -76,5 +76,7 @@ img {
     .recipe {
         width: 90%;
         max-width: 300px;
+        text-align: center;
+        margin: 10px auto; /* Ensures centering */
     }
 }
