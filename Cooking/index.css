@@ -12,6 +12,7 @@ h1 {
 select {
     padding: 10px;
     font-size: 16px;
+    text-align: center;
 }
 
 .recipes {
@@ -66,11 +67,14 @@ img {
         padding: 8px;
     }
     
-    .recipe {
-        width: 100%;
+    .recipes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    img {
+
+    .recipe {
         width: 90%;
+        max-width: 300px;
     }
 }
