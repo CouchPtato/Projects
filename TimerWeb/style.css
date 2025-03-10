@@ -86,12 +86,6 @@ body.game-over {
         font-size: 14px;
     }
 
-    .timer {
-        font-size: 28px;
-        margin-top: 10px;
-        position: absolute;
-    }
-
     .container {
         margin-top: 50px;
     }
