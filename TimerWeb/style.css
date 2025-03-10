@@ -71,10 +71,12 @@ body.game-over {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        margin-top: -14%;
     }
 
     h1 {
         font-size: 16px;
+        padding-bottom: 10px;
     }
 
     input {
