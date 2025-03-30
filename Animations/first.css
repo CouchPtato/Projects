@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+}
+
+.loading{
+    height: 50px;
+    width: 50px;
+    border: 6px solid aqua;
+    border-radius: 4px;
+    box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
+    position: absolute;
+    top: 30%;
+    left: 52.5%;
+    translate: -50% -50%;
+    z-index: 10;
+    animation: 2s loading ease-in-out infinite;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    33%{
+        transform: rotateX(180deg) rotateY(0) rotateZ(0);
+    }
+    67%{
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+    }
+    100%{
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+}
+
+.btn {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: #ff1391;
+    background-color: #ffb9fa;
+    border-radius: 5px;
+    border: 6px solid #ff1391;
+    top: 15%;
+    left: 50%;
+    translate: -50% -75%;
+    position: absolute;
+    box-shadow: 0 0 20px #ff1391;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.btn:hover {
+    transform: translateY(-12px);
+    background-color: #ff1391;
+    color: #ffb9fa;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(1660px);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(1660px);
+    }
+    to {
+        transform: translateX(-200px);
+    }
+}
+
+.slideRight {
+    animation-name: slideRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+.slideLeft {
+    animation-name: slideLeft;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+.slow {
+    animation-duration: 6s;
+}
+
+.slower {
+    animation-duration: 8s;
+}
+
+.line1 {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 6px white;
+    top: 40%;
+    position: absolute;
+    align-content: center;
+}
+
+.line2 {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 6px white;
+    top: 50%;
+    /* left: 4.1%; */
+    position: absolute;
+    align-content: center;
+}
+
+.line3 {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 6px white;
+    top: 60%;
+    /* left: 5.4%; */
+    position: absolute;
+    align-content: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-40px);
+    }
+
+    60% {
+        transform: translateY(-20px);
+    }
+}
+
+.bounce {
+    animation-name: bounce;
+    height: 50px;
+    width: 50px;
+    border: 6px solid rgb(0, 255, 81);
+    border-radius: 50px;
+    box-shadow: 0 0 8px rgb(0, 255, 94), 0 0 8px rgb(0, 255, 94) inset;
+    position: absolute;
+    top: 30%;
+    left: 46.5%;
+    translate: -50% -50%;
+    z-index: 10;
+    animation: 2s bounce infinite;
+}
+
