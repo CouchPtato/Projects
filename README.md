@@ -82,12 +82,6 @@ Please make sure each project includes:
 
 ---
 
-## 📜 License
-
-This repository and its contents are licensed under the [MIT License](LICENSE).
-
----
-
 <p align="center">
   <b>Happy coding! 🚀<br>
   Brought to you by <a href="https://github.com/CouchPtato">CouchPtato</a> 🥔</b>
