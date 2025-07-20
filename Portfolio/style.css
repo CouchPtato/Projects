@@ -29,8 +29,9 @@ body {
 }
 
 .logo-img {
-  height: 65px;
+  height: 70px;
   width: auto;
+  padding-top: 10px;
 }
 
 .nav_links {
@@ -114,5 +115,13 @@ body {
 
   .nav_links {
     display: none;
+  }
+
+  .navdiv {
+    padding-left: 12px;
+  }
+
+  .navbar {
+    height: 55px;
   }
 }
