@@ -59,7 +59,7 @@ if st.sidebar.button("🚀 Recommend Crops"):
 
         # Profit Chart
         st.markdown("### 💰 Profit Comparison")
-        fig, ax = plt.subplots(figsize=(6, 4))
+        fig, ax = plt.subplots(figsize=(5, 3))
         ax.bar(df["name"], df["profit"], color=["#2e8b57", "#3cb371", "#66cdaa"])
         ax.set_ylabel("Profit (₹/hectare)")
         ax.set_title("Crop Profitability")
@@ -69,15 +69,19 @@ if st.sidebar.button("🚀 Recommend Crops"):
     with tabs[1]:
         st.subheader("📊 Smart Economics Insights")
         for crop in results:
-            risk_level = "🟢 Low" if crop["risk"] < 0.25 else "🟡 Medium" if crop["risk"] < 0.4 else " 🔴 High"
+            risk_level = "🟢 Low" if crop["risk"] < 0.25 else "🟡 Medium" if crop["risk"] < 0.4 else "🔴 High"
             score = round(crop["profit"] / (crop["risk"]*100000), 2)
-            st.write(f"**{crop['name']}** → Profit: ₹{crop['profit']} | Risk: {risk_level} | Smart Score: {score}")
-
+    
+            with st.container():
+                st.write(f"**{crop['name']}** → Profit: ₹{crop['profit']} | Risk: {risk_level} | Smart Score: {score}")
+                st.markdown("<br>", unsafe_allow_html=True)
 
     with tabs[2]:
         st.subheader("🌍 Smart Crop Rotation Planner")
         for crop in results:
-            st.info(f"After **{crop['name']}**,  grow  →  {' ,  '.join(crop['rotation'])}")
+            with st.container():
+                st.info(f"After **{crop['name']}**, grow → {', '.join(crop['rotation'])}")
+                st.markdown("<br>", unsafe_allow_html=True)
 
 
     with tabs[3]:
